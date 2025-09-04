@@ -1,3 +1,2 @@
-/home/hannauw/Onstartup/backgrounds/wallpapers
-60
-
+Settings.txt
+15
