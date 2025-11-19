@@ -2,7 +2,7 @@
 #Defaults
 SETTINGSFILE="Settings.txt"
 # SLEEPTIME=15
-CUR_DIR=$(pwd)
+CUR_DIR=$( dirname ${BASH_SOURCE[0]})
 IMAGE_DIR="$CUR_DIR/$(sed -n '2p' "$SETTINGSFILE")"
 SLEEPTIME=$(($(sed -n '4p' "$SETTINGSFILE")))
 FIRSTFILE="$IMAGE_DIR/$(sed -n '6p' "$SETTINGSFILE")"

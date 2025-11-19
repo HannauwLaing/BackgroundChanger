@@ -3,10 +3,12 @@
 #Source of images:
 # https://github.com/D3Ext/aesthetic-wallpapers/tree/main/images
 
-SETTINGSFILE="Settings.txt"
+CUR_DIR=$( dirname ${BASH_SOURCE[0]})
+SETTINGSFILE="$CUR_DIR/Settings.txt"
 # Directory containing your images
-CUR_DIR=$(pwd)
+
 IMAGE_DIR=$CUR_DIR/$(sed -n '2p' "$SETTINGSFILE")
+
 TYPE=''
 FILE=$(find "$IMAGE_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.gif' -o -iname '*.bmp' -o -iname '*'+$TYPE+'*' \) | shuf -n 1)
 
