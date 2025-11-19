@@ -2,8 +2,9 @@
 
 IMAGE_NAMES_FILE="backgroundImageNames.txt"
 
-mkdir -p bin/wallpapers
 DST_DIR="bin/wallpapers/"
+mkdir -p $DST_DIR
+
 while IFS= read -r line
 do
     echo "Downloading file $line"

@@ -4,7 +4,6 @@
 # https://github.com/D3Ext/aesthetic-wallpapers/tree/main/images
 
 # Directory containing your images
-# IMAGE_DIR="/home/hannauw/Onstartup/backgrounds/wallpapers"
 IMAGE_DIR="bin/wallpapers"
 
 # Type of wallpaper
