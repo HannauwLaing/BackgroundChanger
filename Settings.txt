@@ -1,3 +1,7 @@
-Settings.txt
+# Wallpaper directory
+bin/wallpapers
+# Sleep time
 15
+# First Image on startup
 cat.jpg
+
