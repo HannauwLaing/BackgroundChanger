@@ -9,7 +9,6 @@ anime-pond.png
 anime_skyline.png
 anime-water.png
 arch-chan_to.png
-arch_purple.png
 art-lake.png
 astronaut-balloons.jpg
 astronaut.jpg

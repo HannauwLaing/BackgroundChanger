@@ -11,7 +11,7 @@ gsettings set org.gnome.desktop.background picture-uri-dark "$FIRSTFILE"
 
 while true; do
 	sleep $((SLEEPTIME))
-	./$CUR_DIR/change-background.sh
+	$CUR_DIR/change-background.sh
 done
 exit
 
