@@ -12,7 +12,7 @@ setup: _make_bin
 	./DownloadAllImages.sh
 
 _make_bin:
-	mikdir -p bin/
+	mkdir -p bin/
 
 clean:
 	rm -rf bin/
