@@ -8,10 +8,16 @@ SETTINGSFILE="$CUR_DIR/Settings.txt"
 # Directory containing your images
 
 IMAGE_DIR=$CUR_DIR/$(sed -n '2p' "$SETTINGSFILE")
-
 TYPE=''
 FILE=$(find "$IMAGE_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.gif' -o -iname '*.bmp' -o -iname '*'+$TYPE+'*' \) | shuf -n 1)
 
-gsettings set org.gnome.desktop.background picture-uri-dark $FILE
+echo "$IMAGE_DIR"
+echo "$FILE"
+
+
+FILE_PATH="$(realpath $FILE)"
+
+gsettings set org.gnome.desktop.background picture-uri-dark "file://$FILE_PATH"
+gsettings set org.gnome.desktop.background picture-uri "file://$FILE_PATH"
 exit
 
