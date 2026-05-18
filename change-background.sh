@@ -11,9 +11,6 @@ IMAGE_DIR=$CUR_DIR/$(sed -n '2p' "$SETTINGSFILE")
 TYPE=''
 FILE=$(find "$IMAGE_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.gif' -o -iname '*.bmp' -o -iname '*'+$TYPE+'*' \) | shuf -n 1)
 
-echo "$IMAGE_DIR"
-echo "$FILE"
-
 
 FILE_PATH="$(realpath $FILE)"
 
