@@ -6,13 +6,14 @@ usage:
 all: setup run
 	@echo "[BackgroundChanger] Finished"
 run:
-	./changebackgroundLoop.sh
+	@./changebackgroundLoop.sh & disown
+	@# ./changebackgroundLoop.sh
 
 setup: _make_bin
-	./DownloadAllImages.sh
+	@./DownloadAllImages.sh
 
 _make_bin:
-	mkdir -p bin/
+	#mkdir -p bin/
 
 clean:
 	rm -rf bin/
